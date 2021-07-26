@@ -1,0 +1,402 @@
+@font-face{
+    font-family: 'bahnschrift';
+    src: url(/bahnschrift.ttf) format('ttf')
+}
+
+*{
+    font-family: 'bahnschrift';
+}
+
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0px;
+}
+
+
+/* Landing */
+
+.base{
+    height: 100vh;
+    position: relative;
+    z-index: 2;
+}
+
+.video{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+    z-index: 0;
+    background-color: black;
+}
+
+#myVideo{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100vh;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.shadow{
+    background-color: rgba(0, 0, 0, 0.60);
+    height: 100%;
+}
+
+
+header{
+    height: 60px;
+    line-height: 60px;
+    background-color: rgb(255, 255, 255);;
+}
+
+header div{
+    width: 50%;
+    float: left;
+}
+
+#pagetittle{
+    margin: auto;
+    padding-left: 50px;
+    font-weight: normal;
+}
+
+header .right{
+    text-align: right;  
+}
+
+#contacthead{
+    border: black 1px solid;
+    font-size: 20px;
+    margin-right: 50px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5%;
+    color: black;
+    text-decoration: none;
+}
+
+#portfolio{
+    border: black 1px solid;
+    font-size: 20px;
+    margin-right: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5%;
+    color: black;
+    text-decoration: none;
+}
+
+
+.showcase{
+    margin-top: 30vh;
+}
+
+.showtext{
+    font-size: 140%;
+    text-align: center;
+    color: white;
+}
+
+.showtext h1, .showtext h3{
+    font-weight: lighter;
+}
+
+#contactshow{
+    border: white 2px solid;
+    text-decoration: none;
+    color:white;
+    font-size: 150%;
+    font-weight: lighter;
+    letter-spacing: 3px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 2%;
+}
+
+/* Info */
+
+.info{
+    height: auto;
+    padding: 100px 0;
+    min-height: 100vh;
+    background-color: white;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 10vw;
+    margin:auto;
+    width: 85%;
+}
+
+.info-text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 350px;
+    font-size: 110%;
+    text-align: left;
+    height: 300px;
+    line-height: 160%;
+    font-weight: lighter;
+}
+
+.info-text h1{
+    font-weight: lighter;
+    margin-top: 0px;
+}
+
+
+#muller{
+    height: 300px;
+}
+
+#drone{
+    height: 200px;
+}
+
+/* faq */
+
+.faq{
+    background-color: black;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    color:white;
+    height: auto;
+
+}
+
+.faq-main{
+    margin:auto;
+    width: 70%;
+}
+
+.faq-main h1{
+    font-weight: normal;
+    padding-left: 10px;
+}
+
+
+.faq-con{
+    font-weight: lighter;
+    letter-spacing: 2px;
+    font-size: 110%;
+    line-height: 160%;
+}
+
+.faq-con p{
+    margin-block-end: 0px;
+}
+
+.faq-con h2{
+    font-weight: lighter;
+ }
+
+ .vl {
+  border-left: 3px solid white;
+  padding-left: 10px;
+}
+
+.contact{
+    height: auto;
+    background-color: white;
+    padding-top: 30px;
+}
+
+.contact-main{
+    margin:auto;
+    width: 70%;
+}
+
+.contact-head h1{
+    font-weight: normal;
+}
+
+.contact-head, .contact-info{
+    font-weight: lighter;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    font-size: 110%;
+    line-height: 150%;
+}
+
+.contact-info h2{
+    font-weight: normal;
+    margin-top: 0px;
+}
+
+.contact-form{
+    margin-top: 0px;
+    padding-top: 30px;
+    float:left;
+    margin-bottom: 30px;
+}
+
+.contact-form label{
+    font-weight: normal;
+    font-size: 110%;
+}
+
+.contact-form input{
+    border-radius: 3%;
+    border: 1px black solid;
+    height: 30px;
+    width: 400px;
+}
+
+.contact-form #msg{
+    border-radius: 3%;
+    border: 1px black solid;
+    width: 400px;
+    height: 200px;
+    resize: none;
+}
+
+.contact-form input[type="submit"]{
+    border: 1px black solid;
+    width: 200px;
+    height: 40px;
+    background-color: white;
+    font-size: 130%;
+    letter-spacing: 4px;
+}
+
+.contact-info{
+    padding-top: 30px;
+    float:right;
+}
+
+footer{
+    clear:both;
+    height: 80px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    line-height: 80px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    header .right{
+    width: 30%;
+    }  
+
+    header .left{
+    width: 70%;
+    }    
+
+    #pagetittle{
+        padding-left: 20px;
+        font-weight: normal;
+        font-size: 100%;
+    }
+    #contacthead{
+        display: none;
+    }
+    #portfolio{
+        font-size: 100%;
+    }
+    .showtext{
+        font-size: 100%;
+    }
+
+
+    /* faq */
+
+    .faq-main h1{
+        padding-left: 20px;
+    }
+
+    .vl {
+        border-left: 3px solid white;
+        padding-left: 20px;
+    }
+
+    /* Contact */
+
+    .contact-form input{
+        width: 70vw;
+    }
+
+    .contact-form #msg{
+        width: 70vw;
+        height: 100px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    /* Info */
+
+
+    .info{
+        grid-template-columns: 1fr;
+    }
+
+    .info-text{
+        text-align: center;
+        min-height: 300px;
+        height: 300px;
+        line-height: 110%;
+    }
+
+    .info img{
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+        text-align: center;
+    }
+
+    #muller{
+        height: 300px;
+    }
+
+    #drone{
+        padding: 0;
+        height: 200px;
+    }
+
+}
+
+@media only screen and (max-width: 1060px) {
+    
+    .contact-info{
+        float:left
+    }
+
+}
+
+@media only screen and (min-width: 1500px) {
+    .showtext{
+        font-size: 180%;
+    }
+    .video{
+        height: 100vh;
+        position: relative;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    #myVideo{
+        height: auto;
+        width: fill;
+    }
+
+}

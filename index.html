@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="shortcut icon" href="/Logo.ico" />
+    <title>DronePilootSietse</title>
+</head>
+<body>
+
+    <div class= "video">
+        <video autoplay plays-inline muted loop id="myVideo">
+            <source src="./DJI_0413_1.webm" type="video/mp4">
+        </video>
+        <div class="base">
+            <div class="shadow">
+                <header>
+                    <div class="left"><h2 id="pagetittle">DRONEPILOOT </h2></div>
+                    <div class="right"><a href="" id="portfolio">Portfolio</a>
+                        <a href = "#contact" id="contacthead">Contact</a>
+                    </div>
+                </header>
+                <div class="showcase">
+                    <div class="showtext">
+                        <h1>Mooi, Simpel, Snel</h1>
+                        <h3>Dat is mijn doel, Het is voor mij</br>
+                        het belangrijkst dat u uw object    </br>
+                        zo mooi mogelijk op film heeft.</h3>
+                        <a href = "#contact" id="contactshow">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="info">
+        <img id="muller" src="images/Photo_Me.png">
+        <div class = "info-text">
+            <h1>Ik. Name.</h1>
+            <p>Mijn naam is Name, Ik woon zelf in City en
+                heb dit dorp nu al een tijdje van uit de lucht bekeken.
+                Ik wil graag uw huis, bedrijf, land, evenement, auto of boot
+                op de mooiste manier op beeld zetten. Vanuit de lucht.
+                Ik vlieg nu al een tijdje met deze drone, ik weet precies
+                hoe ik samen met u een prachtige video of foto kan schieten</p>
+        </div>
+        <img id="drone" src="images/1572425148_1512648.jpg">
+        <div class = "info-text">
+            <h1>De drone. Mavic Mini.</h1>
+            <p>De mavic Mini, een prachtige drone waar ik nu al een
+            tijdje mee vlieg. Dit is DE drone die uw object het mooiste
+            op beeld gaat zetten. Met haar 2.7k resolutie camera schiet
+            ze beelden die voor elk scherm prachtig zijn en alle kleuren
+            zo mooi mogelijk weergeeft.</p>
+        </div>
+    </div>
+
+    <div class="faq">
+        <div class="faq-main">
+            <h1>De vraag van vandaag</h1>
+            <div class="faq-con vl">
+                <h2>Wat kost nou zo iets?</h2>
+                <p>Niet zo veel als u zou denken, Woont u in City of Place? Dan
+                kunnen we samen iets moois neerzetten vanaf €48,10 incl btw. Uiteraard is elke
+                situatie anders. Dit bedrag is het basis bedrag. Hier bij kunt u rekenen op
+                reiskosten en bewerkings kosten. Neem vrijblijvend contact op voor een
+                prijsschatting. Ik weet zeker dat we iets moois kunnen regelen.</p>
+            </div></br></br>
+            <div class="faq-con vl">
+                <h2>Hoe snel kan nou zo iets?</h2>
+                <p>Het antwoord is snel. Ik kan bijna elke dag bij u terecht voor het maken van de
+                beelden. Het bewerken van de beelden duurt meestal nog een dag extra. We
+                kunnen dus binnen 5 werkdagen een hele mooie video neerzetten.</p>
+            </div>
+            </br></br>
+            <div class="faq-con vl">
+                <h2>Wat nou als ik niet tevreden ben?</h2>
+                <p>Als u contact met mij op neemt maken we een prijsschatting. Na het maken
+                van de prijsschatting kom ik met mijn drone langs om de beelden te maken.
+                Bij het maken van de beelden regelen we het papierwerk na het filmen.</br>
+                </br>
+                U betaald dus alleen als u de beelden mooi vind. Niet tevreden? geen probleem.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id = "contact" class="contact">
+        <div class="contact-main">
+            <div class="contact-head">
+                <h1>Contact opnemen</h1>
+                <p>Als u contact met mij opneemt zal ik u binnen 1 dag terug mailen of bellen.
+                Contact is geheel vrijblijvend en zelfs na het opnemen van de beelden
+                zit u nergens aan vast. Geen risico's dus.</p>
+            </div>
+            <div class="contact-body">
+                <div class="contact-form">
+                    <form id="usrform" action="./contactengine.php" method="POST">
+                        <label for="name">Volledige Naam</label></br>
+                        <input id = "name" name ="name" type="text"></br></br>
+                        <label for="email" >Email</label></br>
+                        <input id = "email" name ="email"  type="email"></br></br>
+                        <label for="phone">Telefoon</label></br>
+                        <input id = "phone" name ="phone"  type="tel"></br></br>
+                        <label for="subject">Onderwerp</label></br>
+                        <input id = "subject" name ="subject"  type="text"></br></br>
+                        <label for="msg">Bericht</label></br>
+                        <textarea name="comment" form="usrform" id = "msg"></textarea></br></br>
+                        <input type ="submit" value = "Verstuur">
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h2>Mijn informatie</h2>
+                    <p>Tel.: Phone</br></br>
+                    Email: mail mail mail mail mail</br></br>
+                    Kvk Nummer: number</br></br>
+                    Adresgegevens:</br>
+                    adresss,</br>
+                    adresss</br></br>
+                    Portfolio:</br>
+                    <a href="">Link goes here</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Name Drone Piloot © 2020</p>
+    </footer>
+
+</body>
+</html>
+
