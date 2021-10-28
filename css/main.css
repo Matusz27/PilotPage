@@ -13,11 +13,13 @@
 
 html{
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
 body{
     margin: 0px;
+    overflow-x: hidden !important;
+
 }
 
 
@@ -275,6 +277,7 @@ header h2{
 
 .contact-info{
     padding-top: 30px;
+    overflow: hidden !important;
     float:right;
 }
 
@@ -285,6 +288,13 @@ footer{
     color: white;
     text-align: center;
     line-height: 80px;
+}
+
+@media only screen and (max-width: 400px) {
+    
+    header{
+        padding: 0 10px !important;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -305,9 +315,7 @@ footer{
     #contacthead{
         display: none;
     }
-    #portfolio{
-        font-size: 100%;
-    }
+
     .showtext{
         font-size: 100%;
     }
